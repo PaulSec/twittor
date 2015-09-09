@@ -9,6 +9,12 @@ For this to work you need:
 - A Twitter account (**Use a dedicated account! Do not use your personal one!**)
 - [Register an app](https://apps.twitter.com/app/new) on Twitter with **Read, write, and direct messages** Access levels. 
 
+Install the dependencies:
+
+```
+$ pip install -r requirements.txt
+```
+
 This repo contains two files:
 - ```twittor.py``` which is the client
 - ```implant.py``` the actual backdoor to deploy
@@ -26,7 +32,7 @@ USERNAME = 'XXXXXXXXXXXXXXXXXXXXXXXX'
 ```
 
 You're probably going to want to compile ```implant.py``` into an executable using [Pyinstaller](https://github.com/pyinstaller/pyinstaller)
-In order to remove the console when compiling with Pyinstaller, the flap ```--no-console``` will help. Just saying. 
+In order to remove the console when compiling with Pyinstaller, the flags ```--noconsole --onefile``` will help. Just saying. 
 
 Usage
 =====
